@@ -38,7 +38,6 @@ export async function translate(request: HttpRequest,context: InvocationContext)
     await request.formData().then( (data)=>{
 
         data.forEach((value,key)=>{
-            context.log(`formData key: "${key}"`);
             if(key == "lang"){
                 lang = value.toString();
             }
