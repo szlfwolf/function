@@ -48,7 +48,6 @@ export async function translate(request: HttpRequest,context: InvocationContext)
 
     }
     );
-    console.log("lang:"+lang)  
 
     console.log("file size:"+file.size)  
     const base64 = Buffer.from(await file.arrayBuffer()).toString('base64')
