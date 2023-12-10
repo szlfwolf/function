@@ -4,7 +4,7 @@ export async function langOptions(request: HttpRequest, context: InvocationConte
     context.log(`Http function processed request for url "${request.url}"`);
 
     return { 
-        body: `[{"code":"eng","name":"English"},{"code":"fre","name":"French"},{"code":"jp","name":"Japanese"}]`,
+        body: `[{ code: "chn", name: "Mandarin Chinese" },{"code":"eng","name":"English"},{"code":"fre","name":"French"},{"code":"jp","name":"Japanese"}]`,
         headers: {'Content-Type': 'application/json'}
     };
 };
